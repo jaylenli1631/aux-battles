@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "auxbattles2",
-    "slug": "auxbattles2",
+    "name": "auxbattles",
+    "slug": "auxbattles",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8f820c11-fa3f-4d9c-99c5-330c0b94c3f1"
+      }
+    },
+    "owner": "jaylen.li"
   }
 }

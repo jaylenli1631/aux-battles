@@ -6,16 +6,29 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "predeploy": "expo export:web",
+    "deploy-hosting": "npm run predeploy && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@expo-google-fonts/major-mono-display": "^0.2.2",
+    "@expo-google-fonts/space-mono": "^0.2.2",
+    "@expo/webpack-config": "^0.17.2",
+    "@react-native-firebase/analytics": "^16.5.0",
+    "@react-native-firebase/app": "^16.5.0",
     "expo": "~47.0.12",
+    "expo-app-loading": "~2.1.1",
+    "expo-font": "~11.0.1",
     "expo-status-bar": "~1.4.2",
+    "firebase": "^9.15.0",
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-web": "~0.18.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "react-error-overlay": "6.0.9"
   },
   "private": true
 }
